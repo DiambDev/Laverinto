@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+                            using System.Collections.Generic;
 
-public class MapController : MonoBehaviour
+public class CódigoIZI : MonoBehaviour
 {
     public GameObject prefab;
     public int sizeMap;
