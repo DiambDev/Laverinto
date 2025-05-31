@@ -5,21 +5,19 @@ using UnityEngine;
 public class MapController : MonoBehaviour
 {
     public GameObject prefab;
-    public int sizeMap;
+    public int sizeMap= 13;
     int[,] grid;
     System.Random rdn = new System.Random();
     void Start()
     {
-        grid =new int[sizeMap, sizeMap];
-        GenerateMap();
+        GenerateMap(1);
+
     }
 
-    void Update()
+    public void GenerateMap(int level)
     {
-        
-    }
-    void GenerateMap()
-    {
+
+        grid = new int[sizeMap, sizeMap];
         Stack<Vector2Int> current = new Stack<Vector2Int>();
         Vector2Int start = new Vector2Int(1, 1);
       
